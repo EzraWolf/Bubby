@@ -1,0 +1,24 @@
+
+from discord.ext import commands
+
+class Example(commands.Cog):
+	def __init__(self, bot):
+		self.bot = bot
+
+	@commands.command(
+		name="example",
+		aliases=[
+			'eg', 
+			'ie',
+		],
+		brief='A testing command',
+		enabled=True,
+		hidden=False,
+	)
+
+	async def Example(self, message):
+		await message.channel.send('Hi')
+
+# Setup the cog
+def setup(bot):
+	bot.add_cog(Example(bot))
