@@ -5,6 +5,7 @@ import discord
 from discord.ext import commands
 
 import config
+from db.core import DB
 
 class Bubby(commands.Bot):
 	def __init__(self) -> None:
@@ -53,6 +54,7 @@ class Bubby(commands.Bot):
 		
 if __name__ == '__main__':
 
+	
 	# TODO: Change fixed location
 	bot = Bubby()
 	bot.run(config.TOKEN)

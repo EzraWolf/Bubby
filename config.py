@@ -10,8 +10,9 @@ PREFIX     : str  = os.getenv('PREFIX')
 OWNER_ID   : int  = os.getenv('OWNER_ID')
 ADMIN_IDS  : str  = os.getenv('ADMIN_IDS')
 SHARD_CT   : int  = os.getenv('SHARD_CT')
-DB_LOGGING : bool = os.getenv('DB_LOGGING')
 ALL_INTENTS: bool = os.getenv('ALL_INTENTS')
+LOGGING    : bool = os.getenv('LOGGING')
+LOG_VIGOR  : int  = os.getenv('LOG_VIGOR')
 
 # Require a min of 1.5s delay between commands
 MSG_TIMEOUT: int = 1.5 * 1000

@@ -1,4 +1,5 @@
 aiohttp
 discord.py
 python-dotenv
+rich
 tensorflow
