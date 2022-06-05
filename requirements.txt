@@ -1,5 +1,6 @@
 aiohttp
 discord.py
+pycryptodome
 python-dotenv
 rich
 tensorflow

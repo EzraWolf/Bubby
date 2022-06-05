@@ -1,6 +1,6 @@
-# Bubby Bot
+# Bubby Bot 1.1
 
-Yet another multi-purpose, discord.py bot.
+Another multi-purpose pycord bot.
 
 ## Self-hosting:
 

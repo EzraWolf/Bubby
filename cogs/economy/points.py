@@ -1,25 +1,29 @@
 
+# buy points for your server to unlock
+# the ability to get more items and stuff
+
 from typing import Optional
 from discord.ext import commands
 
 
 @commands.command(
-    name='coinflip',
+    name='points',
     aliases=[
-        'coin',
-        'flip',
-        'flipcoin',
+        'point',
+        'experience',
+        'exp',
+        'xp',
     ],
-    brief='Flip a coin to make a decision or money',
-    usage='<heads or tails> | <money amnt> | None',
+    brief='WIP',
+    usage='None',
     hidden=False,
-    enabled=True,
+    enabled=False,
     admin_only=False,
 )
 @commands.bot_has_permissions(
     send_messages=True,
 )
-async def coinflip(
+async def points(
     ctx: commands.Context,
     *, text: Optional[str]
 ):
@@ -27,4 +31,4 @@ async def coinflip(
 
 
 def setup(bot: commands.Bot):
-    bot.add_command(coinflip)
+    bot.add_command(points)
